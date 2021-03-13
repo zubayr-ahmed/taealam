@@ -1,4 +1,6 @@
-##########
+##############################################################################################
+# Python getting started
+##############################################################################################
 
 i = 1
 f = 2.2222
@@ -8,9 +10,9 @@ strs = "string"
 print("Int {}, Float {}, bool {}, bytes {}, string {}".format(
     str(i), str(f), str(b), str(by), strs))
 
-############
+###############################################
 # Basic strings
-############
+###############################################
 my_string = "This is a string"
 one_more_string = "This is another string"
 long_string_multiline = """We can add multiple lines to a string
@@ -21,15 +23,15 @@ print(long_string_multiline)  # >>> We can add multiple lines to a string
 print("Let me put some string here")  # >>> Let me put some string here
 
 
-############
+###############################################
 # String Concatenation
-############
+###############################################
 my_string = "This" * 5
 print(my_string)  # >>> ThisThisThisThisThis
 
-############
+###############################################
 # Accessing by Index.
-############
+###############################################
 strings1 = "This is a string, which we can access using index"
 # string[<start>:<end>:step]
 print(strings1)  # >>> This is a string, which we can access using index
@@ -52,9 +54,9 @@ print(strings1[::-1])  # >>> xedni gnisu ssecca nac ew hcihw ,gnirts a si sihT
 print(strings1[len(strings1)::-1])
 
 
-############
+###############################################
 # String methods
-############
+###############################################
 # String methods
 string2 = "this is a SECOND string for methods."
 print(string2.upper())  # >> THIS IS A SECOND STRING FOR METHODS.
@@ -68,9 +70,9 @@ print(string2.split())
 print(len(string2))  # >> 32
 
 
-############
+###############################################
 # Math Operations
-############
+###############################################
 
 a = 2
 b = 4
@@ -89,9 +91,9 @@ print("div ", div)  # >>> div 11.5
 mod = 23 % a
 print("mod ", mod)  # >>> mod 1
 
-############
+###############################################
 # Conversions
-############
+###############################################
 
 # `int("15")`  string to int convertion 15
 print(int("15"))
@@ -154,9 +156,9 @@ print("words,with,spaces".split(','))
 # `[int(x) for x in ('1','29','-3')]`  convert from tuple to list [1,29,-3]
 print([int(x) for x in ('1', '29', '-3')])
 
-############
+###############################################
 # Built-in Functions
-############
+###############################################
 
 print("Hello World")
 
@@ -187,9 +189,9 @@ for item in filtered_letters:  # looping over iterable object
 # >>> i
 
 
-#############
+###############################################
 # Control Flow.
-#############
+###############################################
 
 # Since we have set the condition to `True`
 # It will always go the first branch.
@@ -209,9 +211,9 @@ else:
     ticket_price = 15
     print("£15 per Ticket")
 
-#############
+###############################################
 # Comparators
-#############
+###############################################
 
 
 str1 = "One"
@@ -220,9 +222,9 @@ if str1 == "One":  # True
 else:
     print(False)
 
-#############
+###############################################
 # Boolean Operations
-#############
+###############################################
 
 str1 = "One"
 str2 = "Two"
@@ -241,9 +243,9 @@ else:
     print(False)
 
 
-############
+###############################################
 # Accessing by Index for List .
-############
+###############################################
 fruits = ['orange', 'apple', 'pear', 'banana', 'kiwi', 'apple', 'banana']
 # fruits[<start>:<end>:step]
 print(fruits)
@@ -268,9 +270,9 @@ if 'ducati' in motorcycles:
 if 'indian' not in motorcycles:
     print("Sorry we dont.")
 
-#
+###############################################
 # Operations on list
-#
+###############################################
 
 # list.append(x) # Add an item to the end of the list.
 fruits = ['orange', 'apple', 'pear', 'banana', 'kiwi', 'apple', 'banana']
@@ -280,13 +282,13 @@ print(fruits)
 fruits[len(fruits):] = ['pen-pineapple-apple-pen']
 print(fruits)
 
-
+###############################################
 fruits = ['orange', 'apple', 'pear', 'banana', 'kiwi', 'apple', 'banana']
 fruits.extend(['another-pineapple'])
 print(fruits)
 # Output
 # >>> ['orange', 'apple', 'pear', 'banana', 'kiwi', 'apple', 'banana', 'pineapple', 'another-pineapple']
-
+###############################################
 fruits = ['orange', 'apple', 'pear', 'banana', 'kiwi', 'apple', 'banana']
 fruits.insert(0, 'another-pineapple')
 print(fruits)
@@ -296,13 +298,13 @@ fruits.insert(len(fruits), 'another-pineapple')
 print(fruits)
 # Output
 # >>> [ 'another-pineapple', 'orange', 'apple', 'pear', 'banana', 'kiwi', 'apple', 'banana', 'pineapple', 'another-pineapple']
-
+###############################################
 fruits = ['orange', 'apple', 'pear', 'banana', 'kiwi', 'apple', 'banana']
 fruits.remove('orange')
 print(fruits)
 # Output
 # >>> [ 'apple', 'pear', 'banana', 'kiwi', 'apple', 'banana', 'pineapple']
-
+###############################################
 
 fruits = ['orange', 'apple', 'pear', 'banana', 'kiwi', 'apple', 'banana']
 fruits.pop(0)
@@ -313,14 +315,14 @@ fruits.pop()
 print(fruits)
 # Output
 # >>> [ 'apple', 'pear', 'banana', 'kiwi', 'apple', 'banana']
-
+###############################################
 
 fruits = ['orange', 'apple', 'pear', 'banana', 'kiwi', 'apple', 'banana']
 fruits.clear()
 print(fruits)
 # Output
 # >>> []
-
+###############################################
 
 fruits = ['orange', 'apple', 'pear', 'banana', 'kiwi', 'apple', 'banana']
 print(fruits.index('apple'))
@@ -335,7 +337,7 @@ print(fruits.index('banana'))
 print(fruits.index('banana', 4))  # Find next banana starting a position 4
 # Output
 # >>> 3
-
+###############################################
 
 fruits = ['orange', 'apple', 'pear', 'banana', 'kiwi', 'apple', 'banana']
 print(fruits.count('apple'))
@@ -347,7 +349,7 @@ print(fruits.count('pear'))
 print(fruits.count('banana'))
 # Output
 # >>> 2
-
+###############################################
 
 fruits = ['orange', 'apple', 'pear', 'banana', 'kiwi', 'apple', 'banana']
 fruits.sort()
@@ -355,22 +357,22 @@ print(fruits)
 # Output
 # >>> ['apple', 'apple', 'banana', 'banana', 'kiwi', 'orange', 'pear']
 
-
+###############################################
 fruits = ['orange', 'apple', 'pear', 'banana', 'kiwi', 'apple', 'banana']
 fruits.reverse()
 print(fruits)
 # Output
 # >>> ['banana', 'apple', 'kiwi', 'banana', 'pear', 'apple', 'orange']
 
-
+###############################################
 fruits = ['orange', 'apple', 'pear', 'banana', 'kiwi', 'apple', 'banana']
 new_fruits = fruits.copy()
 print(new_fruits)
 # Output
 
-#
+################################################
 # Tuples
-#
+################################################
 
 t = 12345, 54321, 'hello!'
 print(t[0])
@@ -393,9 +395,9 @@ print(singleton)
 # >>> 1
 # >>> ('hello',)
 
-#
+################################################
 # Convert Tuple to a List
-#
+################################################
 x = ("apple", "orange", "pear")
 y = list(x)   # tuple to list Conversions
 print(y)  # >>> ['apple', 'orange', 'pear']
@@ -403,9 +405,9 @@ x = tuple(y)  # list to tuple Conversions
 print(x)  # >>> ("apple", "orange", "pear")
 
 
-#
+################################################
 # Dictionaries
-#
+################################################
 
 # Create a dictionary `countries` with keys of "CA", "GB", and "IN"
 #   and corresponding values of of "Canada", "Great Britain", and "India"
@@ -418,17 +420,17 @@ print(countries.items())
 # >>> dict_values(['Canada', 'Great Britain', 'India'])
 print(countries.values())
 
-#
+################################################
 # Looping Technique for Dictionaries
-#
+################################################
 knights = {'gallahad': 'the pure', 'robin': 'the brave'}
 for key, value in knights.items():
     print(key, value)
 
 
-#
+################################################
 #  Loops
-#
+################################################
 
 list_a = ['a', 'b', 'c', 'd']
 for item in list_a:
@@ -439,12 +441,12 @@ for item in list_a:
 # >>> b
 # >>> c
 # >>> d
-
+###############################################
 current_value = 1
 while current_value <= 5:
     print(current_value)
     current_value += 1
-
+###############################################
 # output
 # >>> 1
 # >>> 2
@@ -452,9 +454,9 @@ while current_value <= 5:
 # >>> 4
 # >>> 5
 
-#
+################################################
 # Exception Handling
-#
+################################################
 
 try:
     x = 1
@@ -466,9 +468,9 @@ finally:
     print('We always do this')
 
 
-#
+################################################
 # File Operation
-#
+################################################
 
 # Open a file in write/update mode
 # if the file is not present it will create one.
@@ -491,8 +493,9 @@ finally:
     # Close opend file
     file_descriptor.close()
 
+###############################################
 # readline(size)
-
+###############################################
 try:
     with open("foo.txt", "r+") as file_descriptor:
         # get the first line.
@@ -531,8 +534,9 @@ finally:
 # o this fil
 # e
 
+###############################################
 # file_descriptor.write()
-
+###############################################
 try:
     # Open a file in write/update mode
     # if the file is not present it will create one.
@@ -548,3 +552,4 @@ finally:
 
 # Output
 # We wrote 28 chars to the file
+##############################################################################################
